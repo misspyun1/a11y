@@ -58,7 +58,10 @@ button {
 function onClick(event) {
   if (event.type == 'keydown' && event.key == 'Enter') {
     var x = document.getElementById("button");
-    x.innerHTML = "YAY";
+    if(x.innerHTML == "PRESS ME!")
+      x.innerHTML = "YAY";
+    else
+      x.innerHTML = "PRESS ME!";
   }
 }
 </script>
